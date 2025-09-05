@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("treino")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b7bc39e4c4aee9cb7bc995257dc448637f3e48bd")]
 [assembly: System.Reflection.AssemblyProductAttribute("treino")]
 [assembly: System.Reflection.AssemblyTitleAttribute("treino")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

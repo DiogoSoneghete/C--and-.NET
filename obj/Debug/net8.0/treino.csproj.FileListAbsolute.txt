@@ -12,3 +12,4 @@ C:\Users\super\Downloads\treino\treino\obj\Debug\net8.0\refint\treino.dll
 C:\Users\super\Downloads\treino\treino\obj\Debug\net8.0\treino.pdb
 C:\Users\super\Downloads\treino\treino\obj\Debug\net8.0\treino.genruntimeconfig.cache
 C:\Users\super\Downloads\treino\treino\obj\Debug\net8.0\ref\treino.dll
+C:\Users\super\Downloads\treino\treino\obj\Debug\net8.0\treino.sourcelink.json
