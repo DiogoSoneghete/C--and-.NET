@@ -1,4 +1,6 @@
 ﻿
+using System.Security.Cryptography.X509Certificates;
+
 namespace treino;
 
 public class Program
@@ -26,5 +28,17 @@ public class Program
         {
             Console.WriteLine("Você não está casado.");
         }
+
+        dynamic variavel = 42;
+        Console.WriteLine($"\nA variável dinâmica é {variavel}.");
+        variavel = "Uma string!";
+        Console.WriteLine($"A variável dinâmica agora é {variavel}.");
+        variavel = 3.14f;
+        Console.WriteLine($"A variável dinâmica agora é {variavel}.");
+
+        var numero = 100;
+        Console.WriteLine($"\nO número é {numero}.");
+        numero = 200;
+        Console.WriteLine($"O número agora é {numero}.");
     }
 }
