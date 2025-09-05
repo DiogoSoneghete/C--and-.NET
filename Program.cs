@@ -7,38 +7,34 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        string nome = "Windows";
-        Console.WriteLine($"Olá, {nome}!");
+        Console.WriteLine("\n\n-------------LOGIN-------------\n\n");
 
-        int idade = 25;
-        Console.WriteLine($"Você tem {idade} anos de idade.");
-
-        float altura = 1.75f;
-        Console.WriteLine($"Sua altura é de {altura} metros.");
-
-        char genero = 'M';
-        Console.WriteLine($"Seu gênero é {genero}.");
-
-        bool estaCasado = true;
-        if (estaCasado)
+        //solicitar o nome do usuário
+        Console.Write("Digite seu nome: ");
+        string nome = Console.ReadLine();
+        if (string.IsNullOrEmpty(nome))
         {
-            Console.WriteLine("Você está casado.");
+            Console.WriteLine("Nome inválido. Por favor, tente novamente.");
+            return;
         }
         else
         {
-            Console.WriteLine("Você não está casado.");
+            Console.WriteLine($"\nBem-vindo, {nome}!");
         }
 
-        dynamic variavel = 42;
-        Console.WriteLine($"\nA variável dinâmica é {variavel}.");
-        variavel = "Uma string!";
-        Console.WriteLine($"A variável dinâmica agora é {variavel}.");
-        variavel = 3.14f;
-        Console.WriteLine($"A variável dinâmica agora é {variavel}.");
-
-        var numero = 100;
-        Console.WriteLine($"\nO número é {numero}.");
-        numero = 200;
-        Console.WriteLine($"O número agora é {numero}.");
+        //solicitar a idade do usuário
+        Console.Write("\nDigite sua idade: ");
+        int idade = Convert.ToInt32(Console.ReadLine());
+        if (idade < 18)
+        {
+            Console.WriteLine("\n-----------ACESSO NEGADO-----------");
+            Console.WriteLine($"{nome}, Você é menor de idade.\n");
+        }
+        else
+        {
+            Console.WriteLine("\n-----------ACESSO PERMITIDO-----------");
+            Console.WriteLine($"{nome}, Você é maior de idade.\n");
+        }
+        
     }
 }
