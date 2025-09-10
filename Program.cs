@@ -7,30 +7,26 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine("\n\n-----Verificar Impar ou Par-----\n\n");
-
-        Console.Write("Digite um número: ");
-        int numero = Convert.ToInt32(Console.ReadLine());
-
-        if (numero % 2 == 0)
+        Console.Write("Olá, Digite seu nome: ");
+        string nome = Console.ReadLine() ?? string.Empty;
+        Console.WriteLine($"Olá {nome}! Seja bem vindo ao nosso sistema!");
+        Console.Write("Digite uma senha (8 caracteres): ");
+        string senha = Console.ReadLine() ?? string.Empty;
+        if (senha.Length != 8)
         {
-            Console.WriteLine($"O número {numero} é par\n\n");
+            Console.WriteLine("\nSenha inválida! A senha deve conter exatamente 8 caracteres.\nTente novamente.");
+            return;
+        }
+        Console.Write("Confirme sua senha( 8 caracteres): ");
+        string confirmaSenha = Console.ReadLine() ?? string.Empty;
+        if (senha == confirmaSenha)
+        {
+            Console.WriteLine("Senha confirmada com sucesso!");
+            Console.WriteLine($"Bem vindo ao sistema {nome} !");
         }
         else
         {
-            Console.WriteLine($"O número {numero} é ímpar\n\n");
-        }
-        if(numero < 0)
-        {
-            Console.WriteLine($"O número {numero} é negativo\n\n");
-        }
-        else if (numero > 0)
-        {
-            Console.WriteLine($"O número {numero} é positivo\n\n");
-        }
-        else
-        {
-            Console.WriteLine($"O número {numero} é neutro\n\n");
+            Console.WriteLine("As senhas não coincidem.\nTente novamente.");
         }
     }
 }
